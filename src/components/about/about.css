@@ -37,3 +37,28 @@
     height: auto;
     object-fit: cover;
 }
+
+@media screen and (max-width: 480px){
+    .a{
+        height: 60vh;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .a-left{
+        width: 100%;
+    }
+
+    .a-card{
+        height: 30vh;
+    }
+
+    .a-card.bg{
+        display: none;
+    }
+
+    .a-rigth{
+        padding: 20px;
+    }
+}

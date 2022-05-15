@@ -13,6 +13,7 @@
 .i-rigth{
     flex: 1;
     position: relative;
+    overflow: hidden;
 }
 
 .i-left-wrapper{
@@ -82,4 +83,28 @@
     position: absolute;
     top: 0;
     right: 0;
+    overflow: visible;
+}
+
+@media screen and (max-width: 480px){
+    .i{
+        flex-direction: column;
+    }
+
+    .i-left-wrapper{
+       padding: 10px;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       height: 100%;
+    }
+
+    .i-img{
+        object-fit: contain;
+        padding-bottom: 10px;
+    }
+
+    .i-desc{
+        display: none;
+    }
 }
