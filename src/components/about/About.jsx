@@ -1,15 +1,21 @@
 import React from "react";
 import webdev from "../../img/WebDev.jpg";
+import Tilt from "react-vanilla-tilt";
 import "./about.css";
 
 const About = () => {
   return (
     <div className="a">
       <div className="a-left">
-        <div className="a-card bg"></div>
-        <div className="a-card">
+        {/* <div className="a-card bg"></div> */}
+        {/* <div className="a-card"> */}
+        <Tilt
+          options={{ scale: 2, max: 90 }}
+          style={{ height: 450, width: 450, overflow: "hidden", borderRadius: 20 }}
+        >
           <img src={webdev} alt="" className="a-img" />
-        </div>
+        </Tilt>
+        {/* </div> */}
       </div>
       <div className="a-rigth">
         <h1>About Me</h1>

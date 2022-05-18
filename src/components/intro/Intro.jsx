@@ -27,15 +27,9 @@ const Intro = () => {
         </div>
         <ScrollDown>
           <p>Scroll Down</p>
-          {darkMode ? (
-            <Mouse darkMode>
-              <MouseWheel darkMode />
+            <Mouse darkMode={darkMode? true: false}>
+              <MouseWheel darkMode={darkMode? true: false} />
             </Mouse>
-          ) : (
-            <Mouse>
-              <MouseWheel />
-            </Mouse>
-          )}
         </ScrollDown>
       </div>
       <div className="i-rigth">
