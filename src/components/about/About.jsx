@@ -5,17 +5,14 @@ import "./about.css";
 
 const About = () => {
   return (
-    <div className="a">
+    <div className="a" id="about">
       <div className="a-left">
-        {/* <div className="a-card bg"></div> */}
-        {/* <div className="a-card"> */}
         <Tilt
           options={{ scale: 2, max: 90 }}
-          style={{ height: 450, width: 450, overflow: "hidden", borderRadius: 20 }}
+          style={{ height: "35vh", width: "35vh", overflow: "hidden", borderRadius: 20, position: "relative" }}
         >
           <img src={webdev} alt="" className="a-img" />
         </Tilt>
-        {/* </div> */}
       </div>
       <div className="a-rigth">
         <h1>About Me</h1>

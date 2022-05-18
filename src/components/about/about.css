@@ -30,7 +30,6 @@
     border-radius: 30px;
     position: relative;
     overflow: hidden;
-    transform: tr;
 }
 
 .a-img {
@@ -63,4 +62,5 @@
     .a-rigth{
         padding: 20px;
     }
+
 }
