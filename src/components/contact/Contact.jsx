@@ -100,12 +100,13 @@ const Contact = () => {
                     style={{
                       backgroundColor: darkMode && "#333",
                       color: darkMode && "#fff",
+                      borderColor: "#fff",
                     }}
                     type="text"
                     placeholder="Name"
                     name="user_name"
                   />
-                  <StyledError darkMode={darkMode? true: false}>
+                  <StyledError darkMode={darkMode ? true : false}>
                     {touched.user_name && errors.user_name && (
                       <>
                         <TiWarningOutline size={20} />
@@ -117,12 +118,13 @@ const Contact = () => {
                     style={{
                       backgroundColor: darkMode && "#333",
                       color: darkMode && "#fff",
+                      borderColor: "#fff",
                     }}
                     type="text"
                     placeholder="Subject"
                     name="user_subject"
                   />
-                  <StyledError darkMode={darkMode? true: false}>
+                  <StyledError darkMode={darkMode ? true : false}>
                     {" "}
                     {touched.user_subject && errors.user_subject && (
                       <>
@@ -135,12 +137,13 @@ const Contact = () => {
                     style={{
                       backgroundColor: darkMode && "#333",
                       color: darkMode && "#fff",
+                      borderColor: "#fff",
                     }}
                     type="text"
                     placeholder="Email"
                     name="user_email"
                   />
-                  <StyledError darkMode={darkMode? true: false}>
+                  <StyledError darkMode={darkMode ? true : false}>
                     {touched.user_email && errors.user_email && (
                       <>
                         <TiWarningOutline size={20} /> {errors.user_email}
@@ -151,6 +154,7 @@ const Contact = () => {
                     style={{
                       backgroundColor: darkMode && "#333",
                       color: darkMode && "#fff",
+                      borderColor: "#fff",
                     }}
                     rows="4"
                     cols="50"
@@ -158,7 +162,7 @@ const Contact = () => {
                     name="message"
                     as="textarea"
                   />
-                  <StyledError darkMode={darkMode? true: false}>
+                  <StyledError darkMode={darkMode ? true : false}>
                     {" "}
                     {touched.message && errors.message && (
                       <>
