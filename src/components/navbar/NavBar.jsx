@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useState } from "react";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import { Wrapper } from "./styles";
 
-function NavBar() {
+function NavBar(props) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div>NavBar</div>
-  )
+    <Wrapper
+      onClick={() => {
+        setOpen(!open);
+      }}
+      onBlur={() => setOpen(!open)}
+    >
+      {open ? (
+        <HiX size={27} color="white" />
+      ) : (
+        <HiOutlineMenuAlt3 size={25} color="white" />
+      )}
+      {open && props.children}
+    </Wrapper>
+  );
 }
 
-export default NavBar
+export default NavBar;

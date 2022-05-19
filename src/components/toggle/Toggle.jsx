@@ -12,12 +12,12 @@ const Toggle = () => {
 
   return (
     <div className="t">
-      <BsSun size="20px" />
-      <BsMoonFill size="20px" />
+      <BsSun size="16px" />
+      <BsMoonFill size="16px" />
       <div
         className="t-button"
         onClick={handleClick}
-        style={{ left: theme.state.darkMode ? 0 : 25 }}
+        style={{ left: theme.state.darkMode ? 19 : 44 }}
       ></div>
     </div>
   );
