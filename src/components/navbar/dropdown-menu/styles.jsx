@@ -11,7 +11,6 @@ export const Dropdown = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
-  gap: 7px;
 `;
 
 export const Item = styled.a`
@@ -20,6 +19,7 @@ export const Item = styled.a`
     display: flex;
     align-items: center;
     font-size: 18px;
+    padding: 4px;
 
     &:hover,
     &:active{
@@ -40,4 +40,5 @@ export const DivToggle = styled.div`
     padding-top: 5px;
     padding-left: 9px;
     color: white;
+    font-size: 18px;
 `;

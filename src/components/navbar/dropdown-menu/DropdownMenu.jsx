@@ -23,8 +23,9 @@ function DropdownMenu() {
         {" "}
         <MdOutlineContactPhone /> Contact
       </Item>
+      <hr style={{width: "100%"}}/>
       <DivToggle>
-        <Toggle /> Modo
+        <Toggle /> Theme
       </DivToggle>
     </Dropdown>
   );

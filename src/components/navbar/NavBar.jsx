@@ -10,7 +10,11 @@ function NavBar(props) {
       onClick={() => {
         setOpen(!open);
       }}
-      onBlur={() => setOpen(!open)}
+      onBlur={() => {
+        setTimeout(() => {
+          setOpen(false);
+        }, 150);
+      }}
     >
       {open ? (
         <HiX size={27} color="white" />
