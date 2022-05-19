@@ -5,12 +5,13 @@ export const Dropdown = styled.div`
   height: auto;
   background-color: #333;
   position: fixed;
-  top: 65px;
+  top: 80px;
   right: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 480px) {
     flex-direction: column-reverse;

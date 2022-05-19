@@ -13,6 +13,7 @@ export const Wrapper = styled.button`
   height: 50px;
   background-color: #333;
   border-radius: 50%;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
 
   @media (max-width: 480px) {
     position: fixed;
