@@ -11,34 +11,46 @@ export const Dropdown = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
+
+  @media (max-width: 480px) {
+    flex-direction: column-reverse;
+    position: fixed;
+    top: 72vh;
+    right: 10px;
+  }
+`;
+
+export const DivItems = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Item = styled.a`
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding: 4px;
+
+  &:hover,
+  &:active {
+    background-color: #222;
+    border-radius: 5px;
+  }
+
+  svg {
+    margin-right: 10px;
+    margin-left: 10px;
     color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    padding: 4px;
-
-    &:hover,
-    &:active{
-        background-color: #222;
-        border-radius: 5px;
-    }
-
-    svg{
-        margin-right: 10px;
-        margin-left: 10px;
-        color: white;
-    }
+  }
 `;
 
 export const DivToggle = styled.div`
-    display: flex;
-    align-items: center;
-    padding-top: 5px;
-    padding-left: 9px;
-    color: white;
-    font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 9px;
+  color: white;
+  font-size: 18px;
 `;

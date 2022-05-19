@@ -13,4 +13,10 @@ export const Wrapper = styled.button`
   height: 50px;
   background-color: #333;
   border-radius: 50%;
+
+  @media (max-width: 480px) {
+    position: fixed;
+    top: 92vh;
+    right: 10px;
+  }
 `;
