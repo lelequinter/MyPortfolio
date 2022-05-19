@@ -82,6 +82,7 @@ button {
     font-weight: 500;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 form > span {
