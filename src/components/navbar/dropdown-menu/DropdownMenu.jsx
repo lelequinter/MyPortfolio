@@ -4,9 +4,9 @@ import { MdOutlineContactPhone } from "react-icons/md";
 import { Dropdown, DivItems, Item, DivToggle } from "./styles";
 import Toggle from "../../toggle/Toggle";
 
-function DropdownMenu() {
+function DropdownMenu({ style }) {
   return (
-    <Dropdown>
+    <Dropdown style={style}>
       <DivItems>
         <Item href="#">
           {" "}

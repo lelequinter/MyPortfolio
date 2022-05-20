@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { animated } from "@react-spring/web";
 
-export const Dropdown = styled.div`
+export const Dropdown = animated(styled.div`
   width: 120px;
   height: auto;
   background-color: #333;
@@ -19,7 +20,7 @@ export const Dropdown = styled.div`
     top: 72vh;
     right: 10px;
   }
-`;
+`);
 
 export const DivItems = styled.div`
   display: flex;

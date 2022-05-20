@@ -2,10 +2,11 @@ import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
 import ProductList from "./components/productList/ProductList";
 import Contact from "./components/contact/Contact";
+import NavBar from "./components/navbar/NavBar";
+// Context de Tema
 import { useContext } from "react";
 import { ThemeContext } from "./context/context";
-import NavBar from "./components/navbar/NavBar";
-import DropdownMenu from "./components/navbar/dropdown-menu/DropdownMenu";
+
 
 function App() {
   const theme = useContext(ThemeContext);
@@ -17,9 +18,7 @@ function App() {
         color: darkMode && "white",
       }}
     >
-      <NavBar>
-        <DropdownMenu/>
-      </NavBar>
+      <NavBar/>
       <Intro />
       <About />
       <ProductList />
