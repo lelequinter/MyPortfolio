@@ -100,7 +100,7 @@ const Contact = () => {
                     style={{
                       backgroundColor: darkMode && "#333",
                       color: darkMode && "#fff",
-                      borderColor: "#fff",
+                      borderColor: darkMode && "#fff",
                     }}
                     type="text"
                     placeholder="Name"
@@ -118,7 +118,7 @@ const Contact = () => {
                     style={{
                       backgroundColor: darkMode && "#333",
                       color: darkMode && "#fff",
-                      borderColor: "#fff",
+                      borderColor: darkMode && "#fff",
                     }}
                     type="text"
                     placeholder="Subject"
@@ -137,7 +137,7 @@ const Contact = () => {
                     style={{
                       backgroundColor: darkMode && "#333",
                       color: darkMode && "#fff",
-                      borderColor: "#fff",
+                      borderColor: darkMode && "#fff",
                     }}
                     type="text"
                     placeholder="Email"
@@ -154,7 +154,7 @@ const Contact = () => {
                     style={{
                       backgroundColor: darkMode && "#333",
                       color: darkMode && "#fff",
-                      borderColor: "#fff",
+                      borderColor: darkMode && "#fff",
                     }}
                     rows="4"
                     cols="50"
