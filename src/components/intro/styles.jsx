@@ -6,6 +6,10 @@ export const ScrollDown = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const moveWheel = keyframes`
