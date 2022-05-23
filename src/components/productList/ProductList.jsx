@@ -9,8 +9,8 @@ const ProductList = () => {
       <div className="pl-texts">
         <h1 className="pl-title">Create & inspire.</h1>
         <p className="pl-desc">
-          Lama isacreative portfolio that your work has been wai Beautiful
-          homes, stunning portfolio styles&awhole lot inside.
+          I'm a creative developer enthusiast of design that can make that your
+          project looks good. Take a look at some of my projects.
         </p>
       </div>
       <div className="pl-list">
