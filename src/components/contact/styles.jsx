@@ -43,6 +43,23 @@ export const Icon = styled.a`
 export const ButtonSection = styled.div`
   display: flex;
   justify-content: start;
+  align-items: center;
+  gap: 10px;
+`;
+
+export const Button = styled.button`
+  width: 120px;
+  font-size: 18px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  background-color: #757575;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
 `;
 
 export const DivForm = styled.div`

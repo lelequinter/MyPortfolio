@@ -2,49 +2,62 @@ import React, { useContext, useState } from "react";
 import { BiPhone } from "react-icons/bi";
 import { BsMailbox } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
+import { RiSendPlane2Fill } from "react-icons/ri";
 import { Formik, Form, Field } from "formik";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { TiWarningOutline } from "react-icons/ti";
 import { ThemeContext } from "../../context/context";
-import { DivForm, StyledError, ButtonSection } from "./styles";
+import { DivForm, StyledError, ButtonSection, Button } from "./styles";
+import Fade from "react-reveal/Fade";
+import Rotate from "react-reveal/Rotate";
+import { SpinnerRoundFilled } from "spinners-react";
 
 const Contact = () => {
   const [done, setDone] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
   setTimeout(() => {
     setDone(false);
-  }, 2000);
+  }, 4000);
 
   return (
     <div className="c" id="contact">
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-          <h1 className="c-title">Send me a message!</h1>
-          <div className="c-info">
-            <div className="c-info-item">
+          <Fade left>
+            <h3 className="c-title">
+              Send me a <br /> message!
+            </h3>
+
+            <div className="c-info">
+              <div className="c-info-item">
                 <BiPhone size="40px" />
-              <span>+57 312 664 2632</span>
+                <span>+57 312 664 2632</span>
+              </div>
+              <div className="c-info-item">
+                <BsMailbox size="40px" />
+                <span>lele.quinter@gmail.com</span>
+              </div>
+              <div className="c-info-item">
+                <GoLocation size="40px" />
+                <span>Valledupar - Colombia</span>
+              </div>
             </div>
-            <div className="c-info-item">
-              <BsMailbox size="40px" />
-              <span>lele.quinter@gmail.com</span>
-            </div>
-            <div className="c-info-item">
-              <GoLocation size="40px" />
-              <span>Valledupar - Colombia</span>
-            </div>
-          </div>
+          </Fade>
         </div>
+
         <div className="c-right">
-          <p className="c-desc">
-            <b>What's your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along me.
-          </p>
+          <Fade right>
+            <p className="c-desc">
+              <b>What's your story?</b> Get in touch. Always available for
+              freelancing if the right project comes along me.
+            </p>
+          </Fade>
           <Formik
             initialValues={{
               user_name: "",
@@ -76,6 +89,7 @@ const Contact = () => {
               return errores;
             }}
             onSubmit={(values, { resetForm }) => {
+              setLoading(true);
               emailjs
                 .send(
                   "service_u5mfv25",
@@ -87,101 +101,121 @@ const Contact = () => {
                   console.log(result.text);
                   setDone(true);
                   resetForm();
+                  setLoading(false);
                 })
                 .catch((error) => {
                   console.log(error.text);
+                  setLoading(false);
                 });
             }}
           >
             {({ handleSubmit, touched, errors }) => (
               <Form onSubmit={handleSubmit}>
                 <DivForm>
-                  <Field
-                    style={{
-                      backgroundColor: darkMode && "#333",
-                      color: darkMode && "#fff",
-                      borderColor: darkMode && "#fff",
-                    }}
-                    type="text"
-                    placeholder="Name"
-                    name="user_name"
-                  />
-                  <StyledError darkMode={darkMode ? true : false}>
-                    {touched.user_name && errors.user_name && (
-                      <>
-                        <TiWarningOutline size={20} />
-                        {errors.user_name}
-                      </>
-                    )}
-                  </StyledError>
-                  <Field
-                    style={{
-                      backgroundColor: darkMode && "#333",
-                      color: darkMode && "#fff",
-                      borderColor: darkMode && "#fff",
-                    }}
-                    type="text"
-                    placeholder="Subject"
-                    name="user_subject"
-                  />
-                  <StyledError darkMode={darkMode ? true : false}>
-                    {" "}
-                    {touched.user_subject && errors.user_subject && (
-                      <>
-                        <TiWarningOutline size={20} />
-                        {errors.user_subject}
-                      </>
-                    )}
-                  </StyledError>
-                  <Field
-                    style={{
-                      backgroundColor: darkMode && "#333",
-                      color: darkMode && "#fff",
-                      borderColor: darkMode && "#fff",
-                    }}
-                    type="text"
-                    placeholder="Email"
-                    name="user_email"
-                  />
-                  <StyledError darkMode={darkMode ? true : false}>
-                    {touched.user_email && errors.user_email && (
-                      <>
-                        <TiWarningOutline size={20} /> {errors.user_email}
-                      </>
-                    )}
-                  </StyledError>
-                  <Field
-                    style={{
-                      backgroundColor: darkMode && "#333",
-                      color: darkMode && "#fff",
-                      borderColor: darkMode && "#fff",
-                    }}
-                    rows="4"
-                    cols="50"
-                    placeholder="Message"
-                    name="message"
-                    as="textarea"
-                  />
-                  <StyledError darkMode={darkMode ? true : false}>
-                    {" "}
-                    {touched.message && errors.message && (
-                      <>
-                        <TiWarningOutline size={20} />
-                        {errors.message}
-                      </>
-                    )}
-                  </StyledError>
-                  <ButtonSection>
-                    <button type="submit">Submit</button>
-                    <span
+                  <Fade right cascade>
+                    <Field
                       style={{
-                        backgroundColor: darkMode && "#222",
+                        backgroundColor: darkMode && "#333",
                         color: darkMode && "#fff",
+                        borderColor: darkMode && "#fff",
                       }}
-                    >
-                      {done && "Message sent!"}
-                    </span>
-                  </ButtonSection>
+                      type="text"
+                      placeholder="Name"
+                      name="user_name"
+                    />
+                    <StyledError darkMode={darkMode ? true : false}>
+                      {touched.user_name && errors.user_name && (
+                        <>
+                          <TiWarningOutline size={20} />
+                          {errors.user_name}
+                        </>
+                      )}
+                    </StyledError>
+                    <Field
+                      style={{
+                        backgroundColor: darkMode && "#333",
+                        color: darkMode && "#fff",
+                        borderColor: darkMode && "#fff",
+                      }}
+                      type="text"
+                      placeholder="Subject"
+                      name="user_subject"
+                    />
+                    <StyledError darkMode={darkMode ? true : false}>
+                      {" "}
+                      {touched.user_subject && errors.user_subject && (
+                        <>
+                          <TiWarningOutline size={20} />
+                          {errors.user_subject}
+                        </>
+                      )}
+                    </StyledError>
+                    <Field
+                      style={{
+                        backgroundColor: darkMode && "#333",
+                        color: darkMode && "#fff",
+                        borderColor: darkMode && "#fff",
+                      }}
+                      type="text"
+                      placeholder="Email"
+                      name="user_email"
+                    />
+                    <StyledError darkMode={darkMode ? true : false}>
+                      {touched.user_email && errors.user_email && (
+                        <>
+                          <TiWarningOutline size={20} /> {errors.user_email}
+                        </>
+                      )}
+                    </StyledError>
+                    <Field
+                      style={{
+                        backgroundColor: darkMode && "#333",
+                        color: darkMode && "#fff",
+                        borderColor: darkMode && "#fff",
+                      }}
+                      rows="4"
+                      cols="50"
+                      placeholder="Message"
+                      name="message"
+                      as="textarea"
+                    />
+                    <StyledError darkMode={darkMode ? true : false}>
+                      {" "}
+                      {touched.message && errors.message && (
+                        <>
+                          <TiWarningOutline size={20} />
+                          {errors.message}
+                        </>
+                      )}
+                    </StyledError>
+                    <ButtonSection>
+                      <Button type="submit">
+                        Submit
+                        {loading ? (
+                          <SpinnerRoundFilled
+                            size={20}
+                            thickness={100}
+                            speed={100}
+                            color="#fff"
+                          />
+                        ) : (
+                          <RiSendPlane2Fill />
+                        )}
+                      </Button>
+                      {done && (
+                        <Rotate top left>
+                          <span
+                            style={{
+                              backgroundColor: darkMode && "#222",
+                              color: darkMode && "#fff",
+                            }}
+                          >
+                            Message sent!
+                          </span>
+                        </Rotate>
+                      )}
+                    </ButtonSection>
+                  </Fade>
                 </DivForm>
               </Form>
             )}

@@ -17,6 +17,7 @@
     "react-scripts": "^5.0.1",
     "react-spring": "^9.4.5",
     "react-vanilla-tilt": "^1.0.0",
+    "spinners-react": "^1.0.7",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
