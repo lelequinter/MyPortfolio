@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const StyledError = styled.label`
   display: flex;
@@ -6,23 +6,49 @@ export const StyledError = styled.label`
   height: 15px;
   font-size: 13px;
   /* margin: 5px 0 9px 0; */
-  color: ${props => props.darkMode? "white":"#000"};
+  color: ${(props) => (props.darkMode ? "white" : "#000")};
   font-style: italic;
 
-  svg{
-      margin-right: 5px;
+  svg {
+    margin-right: 5px;
+  }
+`;
+
+const shadow = keyframes`
+    0% {
+        box-shadow: inset 5px 5px 10px #ad5216,
+       inset 5px 5px 10px #e9701e;
+       
+    }
+    100%{box-shadow:none;}
+`;
+
+export const Icon = styled.a`
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px #757575, -5px -5px 10px #757575;
+
+  &:focus {
+    animation: ${shadow} 0.15s ease-in-out;
   }
 `;
 
 export const ButtonSection = styled.div`
-    display: flex;
-    justify-content: start;
+  display: flex;
+  justify-content: start;
 `;
 
 export const DivForm = styled.div`
-    display: flex;
-    flex-direction: column;
-    input{
-        width: 100%;
-    }
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 100%;
+  }
 `;

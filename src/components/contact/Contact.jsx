@@ -27,7 +27,7 @@ const Contact = () => {
           <h1 className="c-title">Send me a message!</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <BiPhone size="40px" />
+                <BiPhone size="40px" />
               <span>+57 312 664 2632</span>
             </div>
             <div className="c-info-item">
