@@ -1,5 +1,5 @@
 .a {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
 }
@@ -15,6 +15,15 @@
 
 .a-rigth {
     flex: 1;
+}
+
+.a-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    list-style-type: none;
 }
 
 .a-card.bg {
@@ -41,7 +50,7 @@
 
 @media screen and (max-width: 480px){
     .a{
-        height: 60vh;
+        height: auto;
         flex-direction: column;
         text-align: center;
         margin-top: 50px;
