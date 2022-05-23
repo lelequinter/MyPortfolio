@@ -29,14 +29,15 @@ const About = () => {
         <div className="a-rigth">
           <h1>About Me</h1>
           <p className="a-sub">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti,
-            aspernatur quia, ullam saepe inventore corporis odit nulla modi at
-            maxime doloremque consequuntur autem sint incidunt tempora molestiae
-            quaerat necessitatibus suscipit?
-          </p>
-          <p className="i-desc">
-            I a front-end developer with knowledge in html, javascript, css,
-            react, styled components, etc.
+            Hi i'm Leyder Quintero a front-end developer from Colombia, I have
+            knowledge in front-end tools and libraries. I have experience of one
+            and half year in front-end that means that i know how work with
+            version control systems, Api requests, and work with web pages
+            desing. <br/>
+            <br/>
+            I support my work using libraries that help to make the work easier,
+            fast and well done. On the other hand I know how to work remotely
+            and coworkers, i'm a very adaptative person.
           </p>
         </div>
       </div>

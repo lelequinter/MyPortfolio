@@ -23,8 +23,8 @@ const Intro = () => {
               </div>
             </div>
             <p className="i-desc">
-              I a front-end developer with knowledge in html, javascript, css,
-              react, styled components, etc.
+              I'm a front-end developer with knowledge in html, javascript, css,
+              react, styled components and more.
             </p>
           </div>
           <ScrollDown>

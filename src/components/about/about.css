@@ -15,6 +15,12 @@
 
 .a-rigth {
     flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
 }
 
 .a-skills{
@@ -48,6 +54,14 @@
     border-radius: 20px;
 }
 
+.a-sub{
+    margin-right: 40px;
+}
+
+.i-desc{
+    margin-right: 40px;
+}
+
 li {
     display: flex;
     align-items: center;
@@ -79,6 +93,14 @@ li {
 
     .a-rigth{
         padding: 20px;
+    }
+
+    .a-sub{
+        margin-right: 0px;
+    }
+    
+    .i-desc{
+        margin-right: 0px;
     }
 
 }
