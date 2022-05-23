@@ -33,14 +33,14 @@ const About = () => {
           <div className="a-rigth">
             <h1>About Me</h1>
             <p className="a-sub">
-              Hi i'm Leyder Quintero a front-end developer from Colombia, I have
-              knowledge in front-end tools and libraries. I have experience of
-              one and half year in front-end that means that i know how work
-              with version control systems, Api requests, and work with web
-              pages desing. <br />
-              <br />I support my work using libraries that help to make the work
-              easier, fast and well done. On the other hand I know how to work
-              remotely and coworkers, i'm a very adaptative person.
+              Hello, I'm Leyder Quintero a front-end developer from Colombia, I
+              have knowledge in front-end tools and libraries. I have experience
+              of a year and a half in front-end, which means, I know how to work
+              with version control systems, Api requests and web pages design.{" "}
+              <br />
+              <br />I support my work with libraries that help to make the work
+              easier, faster and well done, otherwise, I know how to work
+              remotely and with coworkers, I am a very adaptable person.
             </p>
           </div>
         </Fade>

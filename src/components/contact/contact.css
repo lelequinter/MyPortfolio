@@ -75,7 +75,7 @@ textarea {
     padding-left: 10px;
 }
 
-/* button {
+button {
     border: none;
     padding: 15px;
     background-color: #757575;
@@ -84,7 +84,7 @@ textarea {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
-} */
+}
 
 form > span {
     margin-left: 20px;
