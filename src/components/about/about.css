@@ -48,6 +48,15 @@
     border-radius: 20px;
 }
 
+li {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 17px;
+    border: 1px solid white;
+}
+
 @media screen and (max-width: 480px){
     .a{
         height: auto;
