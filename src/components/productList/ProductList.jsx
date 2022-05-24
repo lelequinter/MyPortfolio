@@ -11,8 +11,8 @@ const ProductList = () => {
         <div className="pl-texts">
           <h1 className="pl-title">Create & inspire.</h1>
           <p className="pl-desc">
-            I'm a creative developer enthusiast of design that can make that
-            your project looks good. Take a look at some of my projects.
+            I am a creative developer enthusiastic about design who can make
+            your project look great. Take a look at some of my projects.
           </p>
         </div>
       </Fade>
