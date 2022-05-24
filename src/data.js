@@ -1,57 +1,57 @@
-import gifApp from "./img/gifapp.png";
-import MDB from "./img/mdbtest.png";
-import RecipiesApp from "./img/recipiesapp.png";
-import FormInventiba from "./img/forminventiba.png";
-import MarvelApp from './img/marvelapp.png'
-import JavaCal from './img/javacal.png'
-import BatteryLevel from './img/batterylevel.png'
-import IotEsp from './img/iotesp.png'
-import Coursera from './img/coursera.png'
+import gifapp from "./img/gifapp.png";
+import mdb from "./img/mdbtest.png";
+import recipiesapp from "./img/recipiesapp.png";
+import forminventiba from "./img/forminventiba.png";
+import marvelapp from './img/marvelapp.png'
+import javacal from './img/javacal.png'
+import batterylevel from './img/batterylevel.png'
+import iotesp from './img/iotesp.png'
+import coursera from './img/coursera.png'
 
 export const products = [
   {
     id: 1,
-    img: MDB,
+    img: mdb,
     link: "",
   },
   {
     id: 2,
-    img: RecipiesApp,
+    img: recipiesapp,
     link: "",
   },
   {
     id: 3,
-    img: FormInventiba,
+    img: forminventiba,
     link: "",
   },
   {
     id: 4,
-    img: MarvelApp,
+    img: marvelapp,
     link: "",
   },
   {
     id: 5,
-    img: Coursera,
+    img: coursera,
     link: "",
   },
   {
     id: 6,
-    img: IotEsp,
+    img: iotesp,
     link: "",
   },
   {
     id: 7,
-    img: gifApp,
+    img: gifapp,
     link: "",
   },
   {
     id: 8,
-    img: JavaCal,
+    img: javacal,
     link: "",
   },
   {
     id: 9,
-    img: BatteryLevel,
+    img: batterylevel,
     link: "",
   },
 ];
