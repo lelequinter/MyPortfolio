@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1484c700.css",
+    "main.js": "/static/js/main.80243f3b.js",
+    "static/media/mypic.png": "/static/media/mypic.89becd5bd171f3a25fc7.png",
+    "static/media/mdbtest.png": "/static/media/mdbtest.70572b0774b697729e35.png",
+    "static/media/webdev.jpg": "/static/media/webdev.5e5413d99ca65069f005.jpg",
+    "static/media/marvelapp.png": "/static/media/marvelapp.0f06d3abfaffac993084.png",
+    "static/media/gifapp.png": "/static/media/gifapp.9facb8a7b6134ed43cda.png",
+    "static/media/recipiesapp.png": "/static/media/recipiesapp.f853bdb509f20858ca61.png",
+    "static/media/mypicabout.jpg": "/static/media/mypicabout.185511b0d7f942ad40a1.jpg",
+    "static/media/forminventiba.png": "/static/media/forminventiba.516e2b801b40f31afed7.png",
+    "static/media/coursera.png": "/static/media/coursera.307bd788f0789d026f4a.png",
+    "static/media/iotesp.png": "/static/media/iotesp.ff9697d3dc8e979eb2f0.png",
+    "static/media/batterylevel.png": "/static/media/batterylevel.2f19fba8ff8beee7a527.png",
+    "static/media/javacal.png": "/static/media/javacal.399399d349587de7f0d3.png",
+    "index.html": "/index.html",
+    "main.1484c700.css.map": "/static/css/main.1484c700.css.map",
+    "main.80243f3b.js.map": "/static/js/main.80243f3b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1484c700.css",
+    "static/js/main.80243f3b.js"
+  ]
+}
