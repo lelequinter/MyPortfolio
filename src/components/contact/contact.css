@@ -38,15 +38,34 @@
     width: 80%;
 }
 
-.c-info-item{
+/* .c-info-item{
     display: flex;
     align-items: center;
 }
 
-.c-info-item > span {
+ .c-info-item > span {
     margin-left: 20px;
     font-size: 20px;
+    color: aliceblue;
 }
+a> svg{
+    color: aliceblue;
+}
+
+a:link {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+ a:visited {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+  } */
 
 .c-desc {
     font-weight: 400;
@@ -91,6 +110,9 @@ form > span {
 }
 
 @media screen and (max-width: 480px){
+    .c-left{
+        margin-bottom: 30px;
+    }
     .c-wrapper{
         flex-direction: column;
         padding: 0px 50px;

@@ -1,14 +1,23 @@
 import React, { useContext, useState } from "react";
-import { BiPhone } from "react-icons/bi";
-import { BsMailbox } from "react-icons/bs";
+import { FaWhatsapp } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
+import { FaLinkedinIn } from "react-icons/fa";
 import { RiSendPlane2Fill } from "react-icons/ri";
+import { BsGithub } from "react-icons/bs";
 import { Formik, Form, Field } from "formik";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { TiWarningOutline } from "react-icons/ti";
 import { ThemeContext } from "../../context/context";
-import { DivForm, StyledError, ButtonSection, Button } from "./styles";
+import {
+  DivForm,
+  StyledError,
+  ButtonSection,
+  Button,
+  InfoItemA,
+  InfoItemDiv,
+} from "./styles";
 import Fade from "react-reveal/Fade";
 import Rotate from "react-reveal/Rotate";
 import { SpinnerRoundFilled } from "spinners-react";
@@ -33,20 +42,39 @@ const Contact = () => {
             <h3 className="c-title">
               Send me a <br /> message!
             </h3>
-
             <div className="c-info">
-              <div className="c-info-item">
-                <BiPhone size="40px" />
+              <InfoItemA
+                href="https://github.com/lelequinter"
+                darkMode={darkMode ? true : false}
+                target="_blank"
+              >
+                <BsGithub size="30px" />
+                <span>lelequinter</span>
+              </InfoItemA>
+              <InfoItemA
+                href="https://wa.link/yb0inv"
+                darkMode={darkMode ? true : false}
+                target="_blank"
+              >
+                <FaWhatsapp size="32px" />
                 <span>+57 312 664 2632</span>
-              </div>
-              <div className="c-info-item">
-                <BsMailbox size="40px" />
+              </InfoItemA>
+              <InfoItemA
+                href="https://www.linkedin.com/in/leyder-quintero-bayona-5578a11b3/"
+                darkMode={darkMode ? true : false}
+                target="_blank"
+              >
+                <FaLinkedinIn size="30px" />
+                <span>Leyder Quintero Bayona</span>
+              </InfoItemA>
+              <InfoItemDiv darkMode={darkMode ? true : false}>
+                <AiOutlineMail size="30px" />
                 <span>lele.quinter@gmail.com</span>
-              </div>
-              <div className="c-info-item">
-                <GoLocation size="40px" />
+              </InfoItemDiv>
+              <InfoItemDiv darkMode={darkMode ? true : false}>
+                <GoLocation size="30px" />
                 <span>Valledupar - Colombia</span>
-              </div>
+              </InfoItemDiv>
             </div>
           </Fade>
         </div>
