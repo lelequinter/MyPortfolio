@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import webdev from "../../img/WebDev.jpg";
-import MyPicAbout from "../../img/MyPicAbout.jpg";
+import webdev from "../../img/webdev.jpg";
+import mypicabout from "../../img/mypicabout.jpg";
 import Tilt from "react-vanilla-tilt";
 import { ThemeContext } from "../../context/context";
 import Fade from "react-reveal/Fade";
@@ -25,7 +25,7 @@ const About = () => {
                 position: "relative",
               }}
             >
-              <img src={MyPicAbout} alt="" className="a-img" />
+              <img src={mypicabout} alt="" className="a-img" />
             </Tilt>
           </div>
         </Fade>

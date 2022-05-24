@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import MyPic from "../../img/MyPic.png";
+import mypic from "../../img/mypic.png";
 import { Mouse, MouseWheel, ScrollDown } from "./styles.jsx";
 import { ThemeContext } from "../../context/context";
 import Fade from "react-reveal/Fade";
@@ -38,7 +38,7 @@ const Intro = () => {
       <div className="i-rigth">
         <div className="i-bg"></div>
         <Fade right>
-          <img src={MyPic} className="i-img" alt="" />
+          <img src={mypic} className="i-img" alt="" />
         </Fade>
       </div>
     </div>

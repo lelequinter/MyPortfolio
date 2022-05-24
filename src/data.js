@@ -1,12 +1,12 @@
-import gifApp from "./img/GifApp.png";
-import MDB from "./img/MDbTest.png";
-import RecipiesApp from "./img/RecipiesApp.png";
-import FormInventiba from "./img/FormInventiba.png";
-import MarvelApp from './img/MarvelApp.png'
-import JavaCal from './img/JavaCal.png'
-import BatteryLevel from './img/BatteryLevel.png'
-import IotEsp from './img/IotEsp.png'
-import Coursera from './img/Coursera.png'
+import gifApp from "./img/gifapp.png";
+import MDB from "./img/mdbtest.png";
+import RecipiesApp from "./img/recipiesapp.png";
+import FormInventiba from "./img/forminventiba.png";
+import MarvelApp from './img/marvelapp.png'
+import JavaCal from './img/javacal.png'
+import BatteryLevel from './img/batterylevel.png'
+import IotEsp from './img/iotesp.png'
+import Coursera from './img/coursera.png'
 
 export const products = [
   {
