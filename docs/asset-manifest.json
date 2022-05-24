@@ -2,9 +2,9 @@
   "files": {
     "main.css": "/static/css/main.1484c700.css",
     "main.js": "/static/js/main.80243f3b.js",
-    "static/media/mypic.png": "/static/media/mypic.89becd5bd171f3a25fc7.png",
-    "static/media/mdbtest.png": "/static/media/mdbtest.70572b0774b697729e35.png",
-    "static/media/webdev.jpg": "/static/media/webdev.5e5413d99ca65069f005.jpg",
+    "static/media/mypic.png": "/MyWeb/static/media/mypic.89becd5bd171f3a25fc7.png",
+    "static/media/mdbtest.png": "/MyWeb/static/media/mdbtest.70572b0774b697729e35.png",
+    "static/media/webdev.jpg": "/MyWeb/static/media/webdev.5e5413d99ca65069f005.jpg",
     "static/media/marvelapp.png": "/static/media/marvelapp.0f06d3abfaffac993084.png",
     "static/media/gifapp.png": "/static/media/gifapp.9facb8a7b6134ed43cda.png",
     "static/media/recipiesapp.png": "/static/media/recipiesapp.f853bdb509f20858ca61.png",
