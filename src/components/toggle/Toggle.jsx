@@ -11,12 +11,11 @@ const Toggle = () => {
   };
 
   return (
-    <div className="t">
+    <div className="t" onClick={handleClick}>
       <BsSun size="16px" />
       <BsMoonFill size="16px" />
       <div
         className="t-button"
-        onClick={handleClick}
         style={{ left: theme.state.darkMode ? 19 : 44 }}
       ></div>
     </div>
